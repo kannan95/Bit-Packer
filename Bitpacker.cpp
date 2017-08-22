@@ -42,8 +42,6 @@ void Bitpacker::pack(bool pack_value){
 void Bitpacker::pack(int pack_value, int min_value, int max_value){
   int max_value_length = 0;
   int v = 1;
-  unsigned int pack_value = pack + INT_MAX;
-  unsigned int max_value = max +INT_MAX + 1;
   for(int i = 0; i < (sizeof(max_value) * 8) - 1; i++){
       if(v > max_value)
         break;
